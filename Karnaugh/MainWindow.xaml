@@ -1,0 +1,19 @@
+﻿<Window x:Class="Karnaugh.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Karnaugh"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="Pe câți biți e intrarea?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="BitsNrTxt" HorizontalAlignment="Left" Height="23" Margin="181,10,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="37"/>
+        <Button x:Name="BuildBtn" Content="Ok" HorizontalAlignment="Left" Margin="276,10,0,0" VerticalAlignment="Top" Width="49" Click="BuildBtn_Click"/>
+        <Grid x:Name="TheGrid" HorizontalAlignment="Stretch"  Margin="0,41,0.4,-0.2" VerticalAlignment="Stretch" >
+            <Grid HorizontalAlignment="Left" Height="100" Margin="122,110,0,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
+        <Button x:Name="SolveBtn" Content="Solve" HorizontalAlignment="Left" Margin="330,9,0,0" VerticalAlignment="Top" Width="49" Click="SolveBtn_Click"/>
+
+    </Grid>
+</Window>
